@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost/ministrymanager/'),
+    'url' => env('APP_URL', 'crm.nountutor.com.ng'),
 
     'asset_url' => env('ASSET_URL', null),
 
