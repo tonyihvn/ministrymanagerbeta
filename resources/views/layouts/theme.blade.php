@@ -217,10 +217,10 @@
 	<script src="{{asset('/assets/scripts/jquery-ui.js')}}"></script>
 	<script>
 		$( function() {
-		  $( "#date,#from,#to,#dob" ).datepicker({
-      dateFormat: "yy/mm/dd" 
-   });
-		} );
+		  $( "#date,#from,#to,#dob" ).datepicker({dateFormat: "yy/mm/dd"});
+
+		  $(".ui-datepicker, .ui-widget").draggable();
+		});
 	</script>
 </body>
 
