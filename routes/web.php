@@ -76,3 +76,6 @@ Route::get('/communications', [App\Http\Controllers\HomeController::class, 'comm
 Route::post('/sendsms', [App\Http\Controllers\HomeController::class, 'sendSMS'])->name('sendsms')->middleware('role:Admin,Super,Pastor');
 Route::get('/sentmessages', [App\Http\Controllers\HomeController::class, 'sentSMS'])->name('sentmessages')->middleware('role:Admin,Super,Pastor');
 
+// HELP AND SECURITY
+Route::get('/help', [App\Http\Controllers\HomeController::class, 'help'])->name('help');
+Route::get('/security', [App\Http\Controllers\HomeController::class, 'security'])->name('security');

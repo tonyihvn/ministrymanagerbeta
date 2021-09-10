@@ -301,4 +301,21 @@ class HomeController extends Controller
       $message = "The settings has been updated!";
       return redirect()->back()->with(['message'=>$message]);
     }
+
+    public function help()
+    {
+      
+      return view('help');
+
+    }
+
+    public function view()
+    {
+      
+      return view('security');
+
+    }
+
+
+
 }

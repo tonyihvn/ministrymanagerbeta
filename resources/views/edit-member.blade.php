@@ -37,7 +37,7 @@
                                         <div class="row">
                                             <div class="form-group col-md-6">
                                                 <label for="dob" class="control-label ">Date of Birth</label>
-                                                    <input id="dob" name="dob" type="date" class="form-control" value="{{ $user->dob }}" placeholder="Date of Birth">
+                                                    <input id="dob" name="dob" type="text" class="form-control" value="{{ $user->dob }}" placeholder="Date of Birth">
                                             </div>
     
                                             <div class="form-group col-md-6">

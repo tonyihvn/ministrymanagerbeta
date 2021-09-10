@@ -46,7 +46,7 @@ class MinistriesController extends Controller
             'activities'=>$request->activities                
         ]);
         $ministries = ministries::paginate(50);
-        $users = User::select('id','name');
+        $users = User::select('id','name')->get();
         return view('ministries', compact('ministries','users'));
     }
 

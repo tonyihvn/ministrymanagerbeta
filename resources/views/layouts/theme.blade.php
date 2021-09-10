@@ -10,11 +10,13 @@
 	<link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}">
 	<link rel="stylesheet" href="{{ asset('assets/vendor/font-awesome/css/font-awesome.min.css') }}">
 	<link rel="stylesheet" href="{{ asset('assets/vendor/linearicons/style.css') }}">
-	<link rel="stylesheet" href="{{ asset('assets/vendor/chartist/css/chartist-custom.css') }}">
+	
+
 	<!-- MAIN CSS -->
 	<link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
 	<!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
 	<link rel="stylesheet" href="{{ asset('assets/css/demo.css') }}">
+	<link rel="stylesheet" href="{{ asset('assets/css/jquery-ui.css') }}">
 	<!-- GOOGLE FONTS -->
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
 	<!-- ICONS -->
@@ -46,9 +48,12 @@
 						<span class="input-group-btn"><button type="submit" class="btn btn-primary">Go</button></span>
 					</div>
 				</form>
-				<div class="navbar-btn navbar-btn-right">
-					<a class="btn btn-success update-pro" href="/add-new" title="New Member" target="_blank"><span class="fa fa-user-plus"></span> <span>New Member</span></a>
-				</div>
+				
+					<div class="navbar-btn navbar-btn-right roledlink Admin Followup Pastor Super">
+						<a class="btn btn-success update-pro" href="/add-new" title="New Member" target="_blank"><span class="fa fa-user-plus"></span> <span>New Member</span></a>
+					</div>
+				
+				
 				<div id="navbar-menu">
 					<ul class="nav navbar-nav navbar-right">
 						<li class="dropdown">
@@ -80,7 +85,8 @@
 							<ul class="dropdown-menu">
 								<li><a href="/member/{{$login_user->id}}"><i class="lnr lnr-user"></i> <span>My Profile</span></a></li>
 								<li><a href="/tasks"><i class="lnr lnr-envelope"></i> <span>Message</span></a></li>
-								<li><a href="#"  data-toggle="modal" data-target="#settings"><i class="lnr lnr-cog"></i> <span>Settings</span></a></li>
+
+								<li class="roledlink Admin Followup Super" style="visibility:hidden !important;"><a href="#"  data-toggle="modal" data-target="#settings"><i class="lnr lnr-cog"></i> <span>Settings</span></a></li>
 								<li><a href="/logout"><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
 							</ul>
 						</li>
@@ -208,8 +214,14 @@
 	<script src="{{asset('/assets/vendor/bootstrap/js/bootstrap.min.js')}}"></script>
 	<script src="{{asset('/assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js')}}"></script>
 	<script src="{{asset('/assets/scripts/klorofil-common.js')}}"></script>
-
-	
+	<script src="{{asset('/assets/scripts/jquery-ui.js')}}"></script>
+	<script>
+		$( function() {
+		  $( "#date,#from,#to" ).datepicker({
+      dateFormat: "yy/mm/dd" 
+   });
+		} );
+	</script>
 </body>
 
 </html>

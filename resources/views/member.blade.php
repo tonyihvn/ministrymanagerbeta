@@ -102,7 +102,7 @@
 
                 <div class="form-group">
                     <label for="date">Date to Deliver</label>
-                    <input type="date" name="date" id="date" class="form-control">
+                    <input type="text" name="date" id="date" class="form-control">
                 </div>
 
                 <div class="form-group">
@@ -167,7 +167,7 @@
 
                     <div class="form-group">
                         <label for="date">Date Done</label>
-                        <input type="date" name="date" id="date" class="form-control">
+                        <input type="text" name="date" id="date" class="form-control">
                     </div>
 
                     <div class="form-group">
@@ -204,7 +204,7 @@
                         </div>
                         <div class="form-group col-md-6">
                             <label for="nextactiondate">Next Action Date</label>
-                            <input type="date" name="nextactiondate" id="nextactiondate" class="form-control">
+                            <input type="text" name="nextactiondate" id="nextactiondate" class="form-control">
                         </div>
                     </div>
                     
