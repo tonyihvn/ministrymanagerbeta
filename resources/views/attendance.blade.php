@@ -101,7 +101,7 @@
 
                 <div class="row">
                     <div class="form-group col-md-6">
-                        <label for="date">Date</label>
+                        <label for="date" class="control-label sr-only">Date</label>
                         <input type="text" name="date" id="date" class="form-control" value="{{date("Y-m-d")}}">
                     </div>
                     <div class="form-group col-md-6">
