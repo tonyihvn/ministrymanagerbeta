@@ -217,7 +217,7 @@
 	<script src="{{asset('/assets/scripts/jquery-ui.js')}}"></script>
 	<script>
 		$( function() {
-		  $( "#date,#from,#to" ).datepicker({
+		  $( "#date,#from,#to,#dob" ).datepicker({
       dateFormat: "yy/mm/dd" 
    });
 		} );
