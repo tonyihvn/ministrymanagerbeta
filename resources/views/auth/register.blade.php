@@ -1,10 +1,10 @@
-@extends('layouts.theme')
+@extends('layouts.register-theme')
 
 @section('content')
                     
                     <div class="card">
                         <div class="card-header">
-                            Add New Member
+                            Sign up
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">Please Enter Required Fields</h4>
@@ -207,7 +207,7 @@
                                 <div class="form-group row mb-0">
                                     
                                         <button type="submit" class="btn btn-primary">
-                                            {{ __('Add New Member') }}
+                                            {{ __('Sign Up') }}
                                         </button>
                                     
                                 </div>
@@ -215,9 +215,7 @@
 
                             
                         </div>
-                        <div class="card-footer text-muted">
-                            Info: 
-                        </div>
+                        
                     </div>
                     
                

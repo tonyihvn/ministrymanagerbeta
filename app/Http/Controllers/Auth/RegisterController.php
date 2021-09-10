@@ -65,31 +65,31 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
 
-        if($request->email==""){
+        if($data['email']==""){
             $email = "crmadmin@crmfct.org";
             $password = Hash::make("prayer22");
         }else{
-            $email = $request->email;
-            $password = Hash::make($request->password);
+            $email = $data['email'];
+            $password = Hash::make($data['password']);
             
         }
         return User::create([
-            'name' => $request->name,
+            'name' => $data['name'],
             'email' => $email,
-            'gender' => $request->gender,
-            'dob' => $request->dob,
-            'age_group'=>$request->age_group,
-            'phone_number'=>$request->phone_number,
+            'gender' => $data['gender'],
+            'dob' => $data['dob'],
+            'age_group'=>$data['age_group'],
+            'phone_number'=>$data['phone_number'],
             'password' => $password,
-            'about' => $request->about,
-            'address' => $request->address,
-            'location' => $request->location,
-            'house_fellowship' => $request->house_fellowship,
-            'invited_by' => $request->invited_by,
-            'assigned_to' => $request->assigned_to,
-            'ministry' => $request->ministry,
+            'about' => $data['about'],
+            'address' => $data['address'],
+            'location' => $data['location'],
+            'house_fellowship' => $data['house_fellowship'],
+            'invited_by' => $data['invited_by'],
+            'assigned_to' => $data['assigned_to'],
+            'ministry' => $data['ministry'],
             'role'=>"Member",
-            'status'=>$request->status
+            'status'=>$data['status']
         ]);
     }
 }
