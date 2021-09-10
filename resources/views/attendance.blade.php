@@ -117,7 +117,7 @@
 
                 
                 <div class="row">
-                    <div class="form-group">
+                    <div class="form-group col-md-12">
                         <label for="remarks">Remarks</label>
                         <input type="text" name="remarks" id="remarks" class="form-control" placeholder="e.g. 1st Service, Programme name">
                     </div>
