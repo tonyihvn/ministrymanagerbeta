@@ -123,11 +123,7 @@
                     </div>
                   
                 </div>
-                <div class="form-group">
-                    <label for="remarks">Remarks</label>
-                    <input type="text" name="remarks" id="remarks" class="form-control" placeholder="e.g. 1st Service, Programme name">
-                </div>
-
+                
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary">
                         {{ __('Save Attendance') }}
