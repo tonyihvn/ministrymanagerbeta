@@ -70,10 +70,7 @@ class TasksController extends Controller
             }else{
                 $session = file_get_contents("http://www.smslive247.com/http/index.aspx?cmd=login&owneremail=gcictng@gmail.com&subacct=CRMAPP&subacctpwd=@@prayer22");
                 $sessionid = ltrim(substr($session,3),' ');
-            }
-
-            $sessionid = \Cookie::get('sessionidd');
-            
+            }            
         
             $body = $request->title;
         

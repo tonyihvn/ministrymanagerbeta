@@ -68,7 +68,9 @@
 				
 				<div id="navbar-menu">
 					<ul class="nav navbar-nav navbar-right">
-						<li class="dropdown">
+						@auth
+						<li class="dropdown">					
+								
 							
 								<a href="#" class="dropdown-toggle icon-menu" data-toggle="dropdown">
 									<i class="lnr lnr-alarm"></i>
@@ -85,6 +87,7 @@
 								<li><a href="/tasks" class="more">See all notifications</a></li>
 							</ul>
 						</li>
+						@endauth
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="lnr lnr-question-circle"></i> <span>Help</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
 							<ul class="dropdown-menu">

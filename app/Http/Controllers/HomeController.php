@@ -125,8 +125,8 @@ class HomeController extends Controller
             
         ]);
         $members = User::all();
-
-        return view('members', compact('members'));
+        $users = User::select('name','id')->get();
+        return view('members', compact('members','users'));
 
     }
 
