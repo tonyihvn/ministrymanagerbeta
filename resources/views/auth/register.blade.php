@@ -136,8 +136,8 @@
                                         </div>
 
                                         <div class="form-group row">
-                                            <label for="gender"  class="control-label sr-only">Age Group</label>
-                                            <select class="form-control" name="gender" id="gender">
+                                            <label for="age_group"  class="control-label sr-only">Age Group</label>
+                                            <select class="form-control" name="age_group" id="age_group">
                                                 <option value="" selected>Age Group</option>
                                                 <option value="Children Also">Children Also</option>
                                                 <option value="Teenager">Teenager</option>

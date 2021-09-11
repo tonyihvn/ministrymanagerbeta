@@ -3,13 +3,13 @@
 @section('content')
     @php $pagename="dashboard"; @endphp
 
-    <h3 class="page-title">Dashboard | <small style="color: green">Periodic Performance</small></h3>
+    <h3 class="page-title">Dashboard | <small style="color: green">Summary</small></h3>
     <div class="row">
         <div class="panel">
             <div class="panel-heading">
                 <h3 class="panel-title">Stats</h3>
             </div>
-            <div class="panel-body">
+            <div class="panel-body" style="display: block; overflow-x: auto; white-space: nowrap;">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-3 col-sm-6">

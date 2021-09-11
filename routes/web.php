@@ -27,6 +27,7 @@ Route::get('/add-new', [App\Http\Controllers\HomeController::class, 'addNew'])->
 Route::post('/addnew', [App\Http\Controllers\HomeController::class, 'create'])->name('addnew')->middleware('role:Worker,Admin,Followup,Pastor,Super');
 Route::get('/edit-member/{id}/', [App\Http\Controllers\HomeController::class, 'editMember'])->name('edit-member')->middleware('role:Worker,Admin,Followup,Pastor,Super');
 Route::get('/member/{id}/', [App\Http\Controllers\HomeController::class, 'member'])->name('member')->middleware('role:Worker,Admin,Followup,Pastor,Super');
+Route::get('/my_profile/{id}/', [App\Http\Controllers\HomeController::class, 'member'])->name('my_profile')->middleware('role:Member,Worker,Admin,Followup,Pastor,Super');
 Route::get('/delete-member/{id}', [App\Http\Controllers\HomeController::class, 'deleteMember'])->name('delete-member')->middleware('role:Admin,Followup,Pastor,Super');
 Route::post('/settings', [App\Http\Controllers\HomeController::class, 'settings'])->name('settings')->middleware('role:Super');
 Route::post('/searchmembers', [App\Http\Controllers\HomeController::class, 'membersSearch'])->name('searchmembers')->middleware('role:Worker,Admin,Followup,Pastor,Finance,Super');
