@@ -28,6 +28,19 @@ class TasksController extends Controller
         return view('tasks', compact('tasks','users'));
     }
 
+    public function getUrl($url)
+    {
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_POST, 0);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+        $response = curl_exec ($ch);
+        $err = curl_error($ch);  //if you need
+        curl_close ($ch);
+        return $response;
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -195,7 +208,7 @@ class TasksController extends Controller
             if(\Cookie::get('sessionidd')){
                 $sessionid = \Cookie::get('sessionidd');
             }else{
-                $session = file_get_contents("http://www.smslive247.com/http/index.aspx?cmd=login&owneremail=gcictng@gmail.com&subacct=CRMAPP&subacctpwd=@@prayer22");
+                $session = $this->getUrl("http://www.smslive247.com/http/index.aspx?cmd=login&owneremail=gcictng@gmail.com&subacct=CRMAPP&subacctpwd=@@prayer22");
                 $sessionid = ltrim(substr($session,3),' ');
             }
 
@@ -205,7 +218,7 @@ class TasksController extends Controller
             $body = $request->title;
         
 
-            $message = file_get_contents("http://www.smslive247.com/http/index.aspx?cmd=sendmsg&sessionid=".$sessionid."&message=".urlencode($body)."&sender=CHURCH&sendto=".$recipients."&msgtype=0");
+            $message = $this->getUrl("http://www.smslive247.com/http/index.aspx?cmd=sendmsg&sessionid=".$sessionid."&message=".urlencode($body)."&sender=CHURCH&sendto=".$recipients."&msgtype=0");
         }
 
         return redirect()->back()->with(['tasks'=>$tasks,'followups'=>$followups]);
