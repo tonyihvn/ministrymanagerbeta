@@ -50,7 +50,7 @@
 			</div>
 			<div class="container-fluid" style="width: 100%">
 				<div class="navbar-btn">
-					<button type="button" class="btn-toggle-fullwidth"><i class="lnr lnr-menu"></i> {{$settings->motto}}</button>
+					{{$settings->motto}}
 				</div>
 
 				
