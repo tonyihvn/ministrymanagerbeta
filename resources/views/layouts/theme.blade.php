@@ -49,9 +49,7 @@
 				<a href="/"><img  src="/images/{{$settings->logo}}" alt="{{$settings->motto}}" class="img-responsive logo" style="height: 35px !important; float: left;"></a> {{$settings->ministry_name}}
 			</div>
 			<div class="container-fluid" style="width: 100%">
-				<div class="navbar-btn">
-					{{$settings->motto}}
-				</div>
+				
 
 				
 				
@@ -62,10 +60,8 @@
 						<span class="input-group-btn"><button type="submit" class="btn btn-primary">Go</button></span>
 					</div>
 				</form>
+
 				
-					<div class="navbar-btn navbar-btn-right roledlink Admin Followup Pastor Super">
-						<a class="btn btn-success update-pro" href="/add-new" title="New Member" target="_blank"><span class="fa fa-user-plus"></span> <span>New Member</span></a>
-					</div>
 				
 				
 				<div id="navbar-menu">
@@ -98,9 +94,12 @@
 								<li><a href="/security">Security</a></li>
 							</ul>
 						</li>
+
+						
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="lnr lnr-user"></i> <span>@auth {{ Auth::user()->name }} @endauth </span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
 							<ul class="dropdown-menu">
+								<li><a class="btn btn-success update-pro" href="/add-new" title="New Member" target="_blank" style="color: white; font-weight: bold;"><span class="fa fa-user-plus"></span> <span>New Member</span></a></li>
 								<li><a href="/my_profile/{{$login_user->id ?? ''}}"><i class="lnr lnr-user"></i> <span>My Profile</span></a></li>
 								<li><a href="/tasks"><i class="lnr lnr-envelope"></i> <span>Message</span></a></li>
 
@@ -202,7 +201,7 @@
 		</div>
 		<!-- END LEFT SIDEBAR -->
 		<!-- MAIN -->
-		<div class="main">
+		<div class="main" style="padding-top: 30px !important">
 			<!-- MAIN CONTENT -->
 			<div class="main-content">
 				<div class="container-fluid">
