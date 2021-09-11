@@ -309,7 +309,7 @@ class HomeController extends Controller
 
     }
 
-    public function view()
+    public function security()
     {
       
       return view('security');

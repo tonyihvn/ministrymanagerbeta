@@ -87,12 +87,9 @@
 							</ul>
 						</li>
 						@endauth
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="lnr lnr-question-circle"></i> <span>Help</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
-							<ul class="dropdown-menu">
-								<li><a href="/help">Basic Use</a></li>
-								<li><a href="/security">Security</a></li>
-							</ul>
+						<li>
+							<a href="/"><i class="lnr lnr-home"></i> <span>Home</span></a>
+							
 						</li>
 
 						
@@ -104,6 +101,8 @@
 								<li><a href="/tasks"><i class="lnr lnr-envelope"></i> <span>Message</span></a></li>
 
 								<li class="roledlink Admin Followup Super" style="visibility:hidden !important;"><a href="#"  data-toggle="modal" data-target="#settings"><i class="lnr lnr-cog"></i> <span>Settings</span></a></li>
+								<li><a href="/help"><i class="lnr lnr-bubble"></i> Basic Use</a></li>
+								<li><a href="/security"><i class="lnr lnr-lock"></i> Security</a></li>
 								<li><a href="/logout"><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
 							</ul>
 						</li>
