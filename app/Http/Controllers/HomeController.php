@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
 
+
 class HomeController extends Controller
 {
     /**
@@ -150,6 +151,8 @@ class HomeController extends Controller
 
     public function communications()
     {
+      ini_set('allow_url_fopen',1);
+
       $response = null;
       // system("ping -c 1 google.com", $response);
       if(!checkdnsrr('google.com'))
@@ -197,6 +200,7 @@ class HomeController extends Controller
     }
 
     public function sendSMS(request $request){
+      ini_set('allow_url_fopen',1);
 
       // 2 Jan 2008 6:30 PM   sendtime - date format for scheduling 
       if(\Cookie::get('sessionidd')){
@@ -251,7 +255,7 @@ class HomeController extends Controller
     }
 
     public function sentSMS(request $request){
-
+      ini_set('allow_url_fopen',1);
       if(\Cookie::get('sessionidd')){
         $sessionid = \Cookie::get('sessionidd');
       }else{

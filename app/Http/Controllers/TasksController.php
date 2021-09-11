@@ -46,6 +46,7 @@ class TasksController extends Controller
      */
     public function store(Request $request)
     {
+        ini_set('allow_url_fopen',1);
         tasks::updateOrCreate(['id'=>$request->id],[
             'title' => $request->title,
             'date' => $request->date,
