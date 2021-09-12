@@ -234,7 +234,7 @@
 		<div class="clearfix"></div>
 		<footer>
 			<div class="container-fluid">
-				<p class="copyright">&copy; {{date("Y")}} <a href="https://www.crmfct.org" target="_blank">CRM - FCT</a>. All Rights Reserved.</p>
+				<p class="copyright">&copy; {{date("Y")}} <a href="https://www.crmfct.org" target="_blank">CRM - FCT 2</a>. All Rights Reserved.</p>
 			</div>
 		</footer>
 	</div>
