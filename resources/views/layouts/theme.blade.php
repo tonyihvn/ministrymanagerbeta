@@ -37,10 +37,17 @@
 			display: table;
 			width: 100%;
 		}
+        #cover {
+    background: url("to/your/ajaxloader.gif") no-repeat scroll center center #FFF;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
 	</style>
 </head>
 
 <body>
+<div id="cover"></div>
 	<!-- WRAPPER -->
 	<div id="wrapper">
 		<!-- NAVBAR -->
@@ -651,6 +658,9 @@
 		}
 		protect();
 		
+        $(window).on('load', function(){
+    $('#cover').fadeOut(1000);
+})
 	</script>	
 
 
