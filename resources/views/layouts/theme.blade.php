@@ -38,7 +38,7 @@
 			width: 100%;
 		}
         #cover {
-    background: url("{{asset('images/ajax-loader.gif')}}") no-repeat scroll center center #FFF;
+    background: url("{{asset('/images/ajax-loader.gif')}}") no-repeat scroll center center #FFF;
     position: absolute;
     height: 100%;
     width: 100%;
