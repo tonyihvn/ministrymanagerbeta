@@ -257,7 +257,7 @@
 </html>
 
 <!-- The Settings Modal -->
-<div class="modal roledlink Super" id="settings">
+<div class="modal" id="settings">
     <div class="modal-dialog">
       <div class="modal-content">
   
