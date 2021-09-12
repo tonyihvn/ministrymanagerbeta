@@ -48,7 +48,7 @@ class HousefellowhipsController extends Controller
             'activities'=>$request->activities                
         ]);
         $housefellowships = housefellowhips::paginate(50);
-        $users = User::select('id','name');
+        $users = User::select('id','name')->get();
         return view('housefellowships', compact('housefellowships','users'));
     }
 
