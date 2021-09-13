@@ -50,7 +50,7 @@ class HomeController extends Controller
         $totals = $attendance[0]->total.",".$attendance[1]->total.",".$attendance[2]->total.",".$attendance[3]->total.",".$attendance[4]->total.",".$attendance[5]->total.",".$attendance[6]->total.",".$attendance[7]->total.",".$attendance[8]->total.",".$attendance[9]->total;
 
         $midweek = $midweek[0]->men.",".$midweek[1]->men.",".$midweek[2]->men.",".$midweek[3]->men.",".$midweek[4]->men.",".$midweek[5]->men.",".$midweek[6]->men.",".$midweek[7]->men.",".$midweek[8]->men.",".$midweek[9]->men;
-
+        // sleep(5);
         return view('home', compact('dates','midweek','totals','uprogrammes'));
     }
 

@@ -38,11 +38,13 @@
 			width: 100%;
 		}
         #cover {
-    background: url("{{asset('/images/ajax-loader.gif')}}") no-repeat scroll center center #FFF;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
+			background: url("{{asset('/images/ajax-loader.gif')}}") no-repeat scroll center center #CCC;
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			z-index: 999999999;
+			opacity: 0.8;
+		}
 	</style>
 </head>
 
@@ -649,6 +651,7 @@
 			}
 		});
 
+		// MANAGE ROLES AND ACCESS
 		var usrRole = "{{$login_user->role ?? ''}}";
 
 		$(".roledlink").hide();
@@ -657,10 +660,12 @@
 			$("." + usrRole).show();
 		}
 		protect();
+
+		$(window).on('load', function(){
+			$('#cover').fadeOut(1000);
+		});
 		
-        $(window).on('load', function(){
-    $('#cover').fadeOut(1000);
-})
+        
 	</script>	
 
 
