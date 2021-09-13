@@ -434,7 +434,7 @@
 		var table = $('#products').DataTable( {
 			orderCellsTop: true,
 			fixedHeader: true,
-			"order": [[ 0, "asc" ]],
+			"order": [[ 2, "asc" ]],
 			"paging": false,
 			"pageLength": 50,
 			"filter": true,
