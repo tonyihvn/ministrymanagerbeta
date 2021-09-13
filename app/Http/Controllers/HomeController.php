@@ -76,7 +76,7 @@ class HomeController extends Controller
   
     public function members()
     {
-      $members = User::all();
+      $members = User::orderBy('');
       $users = User::select('name','id')->get();
       return view('members', compact('members','users'));
     }

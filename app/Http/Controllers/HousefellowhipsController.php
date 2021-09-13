@@ -49,7 +49,7 @@ class HousefellowhipsController extends Controller
         ]);
         $housefellowships = housefellowhips::paginate(50);
         $users = User::select('id','name')->get();
-        return view('housefellowships', compact('housefellowships','users'));
+        return view('house-fellowships', compact('housefellowships','users'));
     }
 
     /**
