@@ -89,6 +89,7 @@
                                             <label for="house_fellowship"  class="control-label sr-only">Closest House Fellowship</label>
                                             <select class="form-control" name="house_fellowship" id="house_fellowship">
                                             <option value="" selected>Closest House Fellowship</option>
+                                            <option value="None">None</option>
                                             @foreach ($house_fellowships as $hfellowship)
                                                 <option value="{{$hfellowship->name}}">{{$hfellowship->name}}</option>
                                             @endforeach
@@ -100,6 +101,7 @@
                                         <div class="form-group row">
                                             <label for="invited_by"  class="control-label sr-only">Invited By</label>
                                             <select class="form-control" name="invited_by" id="invited_by">
+                                                <option value="None">None</option>
                                                 <option value="" selected>Invited By</option>
                                                 @foreach ($users as $user)
                                                     <option value="{{$user->id}}">{{$user->name}}</option>
@@ -127,6 +129,7 @@
                                             <label for="ministry"  class="control-label sr-only">Ministry</label>
                                             <select class="form-control" name="ministry" id="ministry">
                                             <option value="" disabled selected>Ministry</option>
+                                            <option value="None">None</option>
                                             @foreach ($ministries as $ministry)
                                                 <option value="{{$ministry->name}}">{{$ministry->name}}</option>
                                             @endforeach
