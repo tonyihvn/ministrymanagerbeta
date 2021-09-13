@@ -27,15 +27,17 @@
     <link rel="stylesheet" href="{{asset('/css/jquery.dataTables.min.css')}}">
     <link rel="stylesheet" href="{{asset('https://cdn.datatables.net/buttons/1.6.2/css/buttons.dataTables.min.css')}}">
 	<style>
-		table {
-			display: block;
-			overflow-x: auto;
-			white-space: nowrap;
-		}
+		@media only screen and (max-width: 600px) {
+			table {
+				display: block;
+				overflow-x: auto;
+				white-space: nowrap;
+			}
 
-		table tbody {
-			display: table;
-			width: 100%;
+			table tbody {
+				display: table;
+				width: 100%;
+			}
 		}
         #cover {
 			background: url("{{asset('/images/ajax-loader.gif')}}") no-repeat scroll center center #CCC;
