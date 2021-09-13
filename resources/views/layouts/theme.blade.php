@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="{{asset('/css/jquery.dataTables.min.css')}}">
     <link rel="stylesheet" href="{{asset('https://cdn.datatables.net/buttons/1.6.2/css/buttons.dataTables.min.css')}}">
 	<style>
-		@media only screen and (max-width: 600px) {
+		@media only screen and (max-width: 900px) {
 			table {
 				display: block;
 				overflow-x: auto;
