@@ -96,6 +96,6 @@ class HousefellowhipsController extends Controller
     {
         housefellowhips::findOrFail($id)->delete();      
         $message = 'The House Fellowship has been deleted!';      
-        return redirect()->route('housefellowships')->with(['message'=>$message]);
+        return redirect()->route('house-fellowships')->with(['message'=>$message]);
     }
 }
