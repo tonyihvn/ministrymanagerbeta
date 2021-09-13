@@ -62,11 +62,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-3 col-sm-6">
-                            <a href="http://www.uiuxstream.com/dashboard-user-profile-page-design-using-bootstrap-4/">uiuxstream</a>
-                        </div>
-                    </div>
+                   
                 </div>
             </div>
         </div>

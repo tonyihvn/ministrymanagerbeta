@@ -3,7 +3,7 @@
 @section('content')
     @php $modal="accounthead"; @endphp
 
-    <h3 class="page-title">$hftries | <small style="color: green">Service Areas</small></h3>
+    <h3 class="page-title">House Fellowships | <small style="color: green">Home Cell</small></h3>
     <div class="row">
             <div class="panel">
                 <div class="panel-heading">
